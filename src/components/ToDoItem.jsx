@@ -10,7 +10,6 @@ function ToDoItem(props) {
       >
         {props.text}
       </li>
-      ;
     </div>
   );
 }
