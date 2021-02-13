@@ -1,7 +1,13 @@
 import React from "react";
 
 function ToDoItem(props) {
-  return <li>{props.text}</li>;
+  function handleClick() {}
+
+  return (
+    <div onClick={handleClick}>
+      <li style={{ textDecoration: "line-through" }}>{props.text}</li>;
+    </div>
+  );
 }
 
 export default ToDoItem;
