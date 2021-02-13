@@ -17,9 +17,13 @@ function App() {
     setInputText("");
   }
 
-  function deleteItem() {
+  function deleteItem(id) {
     console.log("ive been checked");
-    setItems((prev) => {});
+    setItems((prev) => {
+      return prev.filter((item, index) => {
+        return index !== id;
+      });
+    });
   }
 
   return (
